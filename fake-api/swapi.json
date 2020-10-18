@@ -912,6 +912,17 @@
       "birth_year": "birthDay",
       "gender": "genderV",
       "id": 87
+    },
+    {
+      "name": "name",
+      "height": "height",
+      "mass": "mass",
+      "hair_color": "hair",
+      "skin_color": "skin",
+      "eye_color": "eye",
+      "birth_year": "birthDay",
+      "gender": "genderV",
+      "id": 88
     }
   ]
 }
