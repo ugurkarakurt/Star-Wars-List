@@ -1,0 +1,6 @@
+#Bıundle dosyasının da sonradan ıoluşturulması gerektiğinden ignore ediyorum.
+bundles/
+#Yüklenen paketlerin gereksiz yer kaplamasıonı engellemek adına ignore ediyorum.
+node_modules/
+# Paketlerin özet dosyasını da ighnore ediyorum.
+package-lock.json
