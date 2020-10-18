@@ -1,0 +1,30 @@
+{
+  "name": "fake_api-request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --output-public-path=/bundles/  --mode development --open --hot",
+    "build": "webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugurkarakurt/Fake_Api-reqRequest.git"
+  },
+  "author": "UgurK",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ugurkarakurt/Fake_Api-reqRequest/issues"
+  },
+  "homepage": "https://github.com/ugurkarakurt/Fake_Api-reqRequest#readme"
+}
