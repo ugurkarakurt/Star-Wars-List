@@ -868,6 +868,50 @@
       "birth_year": "18dy18",
       "gender": "male",
       "id": 83
+    },
+    {
+      "name": "name.value.trim()",
+      "height": "height.value",
+      "mass": "mass.value",
+      "hair_color": "hair.value,",
+      "skin_color": "skin.value",
+      "eye_color": "eye.value",
+      "birth_year": "birthDay.value.trim()",
+      "gender": "genderVal",
+      "id": 84
+    },
+    {
+      "name": "name.value.trim()",
+      "height": "height.value",
+      "mass": "mass.value",
+      "hair_color": "hair.value,",
+      "skin_color": "skin.value",
+      "eye_color": "eye.value",
+      "birth_year": "birthDay.value.trim()",
+      "gender": "genderVal",
+      "id": 85
+    },
+    {
+      "name": "name",
+      "height": "height",
+      "mass": "mass",
+      "hair_color": "hair",
+      "skin_color": "skin",
+      "eye_color": "eye",
+      "birth_year": "birthDay",
+      "gender": "genderVal",
+      "id": 86
+    },
+    {
+      "name": "name",
+      "height": "height",
+      "mass": "mass",
+      "hair_color": "hair",
+      "skin_color": "skin",
+      "eye_color": "eye",
+      "birth_year": "birthDay",
+      "gender": "genderV",
+      "id": 87
     }
   ]
 }
