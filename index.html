@@ -19,7 +19,120 @@
     <header id="header" class="">
         <img src="./assets/img/header.png" alt="">
     </header>
+    <main class="container " id="main">
+        <div class="search-input-wrapper">
+            <input type="text" id="search" placeholder="Search a Person">
+            <i id="addButton" class="fab fa-jedi-order" title="Add"></i>
+        </div>
+        <form id="form">
+            <div class="form-group">
+                <!-- Name  -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Name</span>
+                    </div>
+                    <input class="form-control" id="name" type="text" placeholder="Name">
+                </div>
+                <!-- Birth Day -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Birth Day</span>
+                    </div>
+                    <input class="form-control" id="birth" type="text" placeholder="Birth Day">
+                </div>
 
+                <!-- Height  -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Height</span>
+                    </div>
+                    <input class="form-control" id="height" type="range" min="0" max="300" value="0">
+                    <div class="input-group-append">
+                        <input class="form-control" type="number" id="forHeight" for="height" value="0">
+                    </div>
+                </div>
+
+                <!-- Mass  -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Mass</span>
+                    </div>
+                    <input class="form-control" id="mass" type="range" min="0" max="300" value="0">
+                    <div class="input-group-append">
+                        <input class="form-control" type="number" id="forMass" for="mass" value="0">
+                    </div>
+                </div>
+
+                <!-- Hair -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Hair</span>
+                    </div>
+                    <select class="form-control" name="hair" id="hair">
+                    </select>
+                </div>
+
+                <!-- Skin -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Skin</span>
+                    </div>
+                    <select class="form-control" name="skin" id="skin">
+                    </select>
+                </div>
+
+                <!-- Eye -->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span>Eye</span>
+                    </div>
+                    <select class="form-control" name="eye" id="eye">
+                    </select>
+                </div>
+
+                <!-- Gender  -->
+                <div class="input-group" id="gender">
+                    <div class="input-group-prepend">
+                        <span>Gender</span>
+                    </div>
+                    <div class="check-wrapper">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-wrap">
+                <button id="button">Add a New Character</button>
+            </div>
+        </form>
+
+        <div class="table-wrapper">
+            <table id="dataTable" class="table-borderless">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Height</th>
+                        <th>Mass</th>
+                        <th>Hair C.</th>
+                        <th>Skin C.</th>
+                        <th>Eye C.</th>
+                        <th>Birth D</th>
+                        <th>Gender</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./bundles/bundle.js"></script>
