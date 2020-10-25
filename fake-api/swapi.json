@@ -923,6 +923,16 @@
       "birth_year": "birthDay",
       "gender": "genderV",
       "id": 88
+    },
+    {
+      "name": "UĞUR",
+      "height": "0",
+      "mass": "0",
+      "hair_color": "White",
+      "skin_color": "Black",
+      "eye_color": "Light-Blue",
+      "birth_year": "123",
+      "id": 89
     }
   ]
 }

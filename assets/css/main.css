@@ -153,7 +153,6 @@ main {
               width: 20%;
               text-align: left; }
             main .table-wrapper table thead tr th:nth-child(11) {
-              display: none;
               width: 5%; }
       main .table-wrapper table tbody {
         border: 3px solid #474744;
@@ -185,7 +184,6 @@ main {
                     color: red;
                     transform: scale(1.1); }
             main .table-wrapper table tbody tr td:nth-child(12) {
-              display: none;
               text-align: center;
               padding-left: .5rem; }
               main .table-wrapper table tbody tr td:nth-child(12) i {
