@@ -50,7 +50,7 @@ export class UI {
                                             <i class="fas fa-trash"></i>
                                         </td>
                                         <td>
-                                            <i id="close" class="fas fa-window-close"></i>
+                                            <i class="fas fa-window-close"></i>
                                         </td>
                                     </tr>`
         }))
@@ -71,11 +71,11 @@ export class UI {
                                     <td>${data.birth_year}</td>
                                     <td>${data.gender}</td>
                                     <td>
-                                    <i class="fas fa-wrench"></i>
-                                    <i class="fas fa-trash"></i>
+                                        <i class="fas fa-wrench"></i>
+                                        <i class="fas fa-trash"></i>
                                     </td>
                                     <td>
-                                    <i class="fas fa-window-close"></i>
+                                        <i class="fas fa-window-close"></i>
                                     </td>
                                 </tr>`
     }

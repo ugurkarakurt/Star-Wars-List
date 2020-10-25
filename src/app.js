@@ -58,19 +58,16 @@ function addEventListeners() {
             this.value = 300;
             Swal.fire('Please enter a valid value.')
         }
-
     })
-    eye.addEventListener("input", function () {
+    eye.addEventListener("select", function () {
         ui.updateInputText("forEye", eye.value)
     })
-    hair.addEventListener("input", function () {
+    hair.addEventListener("select", function () {
         ui.updateInputText("forHair", this.value)
     })
-    skin.addEventListener("input", function () {
+    skin.addEventListener("select", function () {
         ui.updateInputText("forSkin", this.value)
     })
-
-    form.addEventListener("submit", addNewChar);
 
     search.onkeyup = function () {
         ui.searchInDataTable()
@@ -101,9 +98,11 @@ request.get()
         const closeBTN = document.querySelectorAll(".fa-window-close");
         closeBTN.forEach(function (close) {
             close.addEventListener("click", function () {
-                ui.defaultRow(close.parentElement.parentElement)
+                ui.defaultRow(close.parentElement.parentElement);
+                close.parentElement.parentElement.contentEditable = false;
             });
         });
+        form.addEventListener("submit", addNewChar);
     })
     .catch(err => console.log(err));
 
@@ -113,12 +112,11 @@ function updateRow(element) {
 
     updateData = element.parentElement.parentElement.children;
 
-    element.parentElement.parentElement.contentEditable = true,
-        element.parentElement.contentEditable = false,
-        element.parentElement.nextElementSibling.contentEditable = false,
+    element.parentElement.parentElement.contentEditable = true;
+    element.parentElement.contentEditable = false;
+    element.parentElement.nextElementSibling.contentEditable = false;
 
-
-        ui.updateRow(element.parentElement.parentElement);
+    ui.updateRow(element.parentElement.parentElement);
 
     element.parentElement.parentElement.onfocusout = function () {
         Swal.fire({
@@ -145,14 +143,14 @@ function updateRow(element) {
                         "birth_year": updateData[8].innerText,
                         "gender": updateData[9].innerText
                     }),
-                    element.parentElement.parentElement.contentEditable = false,
                     ui.defaultRow(element.parentElement.parentElement)
                 )
             }
         })
 
-    }
-}
+    };
+};
+
 function deleteRow(element) {
 
     console.log(element.parentElement.parentElement.id);
@@ -172,14 +170,14 @@ function deleteRow(element) {
                 'Your file has been deleted.',
                 'success',
                 request.delete(element.parentElement.parentElement.id)
-                    .then(message => {
-                        ui.deleteCharUI(element.parentElement.parentElement)
-                    })
-                    .catch(err => console.error(err))
+                .then(message => {
+                    ui.deleteCharUI(element.parentElement.parentElement)
+                })
+                .catch(err => console.error(err))
             )
         }
     })
-}
+};
 
 let genderVal;
 
@@ -198,32 +196,31 @@ function addNewChar(e) {
             }
         }
         request.post({
-            "name": name.value.trim(),
-            "height": height.value,
-            "mass": mass.value,
-            "hair_color": hair.value,
-            "skin_color": skin.value,
-            "eye_color": eye.value,
-            "birth_year": birthDay.value.trim(),
-            "gender": genderVal
-        })
+                "name": name.value.trim(),
+                "height": height.value,
+                "mass": mass.value,
+                "hair_color": hair.value,
+                "skin_color": skin.value,
+                "eye_color": eye.value,
+                "birth_year": birthDay.value.trim(),
+                "gender": genderVal
+            })
             .then(data => {
-                ui.addNewCharTable(data)
+                ui.addNewCharTable(data);
                 Swal.fire({
                     icon: 'success',
                     title: 'Successfully added.'
-
                 })
             })
         ui.clearInp();
-    }
+    };
 
     e.preventDefault();
-}
+};
 
 function showMain() {
     ui.showMainContainer();
-}
+};
 
 function openForm(e) {
     ui.openInputs(e.target.parentElement.parentElement)
