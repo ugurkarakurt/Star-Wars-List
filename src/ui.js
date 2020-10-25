@@ -34,7 +34,7 @@ export class UI {
     dataPushTable(datas) {
         datas.forEach(((data, i) => {
             this.tableLenght = this.row.length
-            this.tbody.innerHTML += `<tr id="row">
+            this.tbody.innerHTML += `<tr id="${data.id}">
                                         <td style="display: none">${data.id}</td>
                                         <td>${i + 1}</td>
                                         <td>${data.name}</td>
@@ -45,11 +45,11 @@ export class UI {
                                         <td>${data.eye_color}</td>
                                         <td>${data.birth_year}</td>
                                         <td>${data.gender}</td>
-                                        <td id="delete-update">
-                                            <i id="update" class="fas fa-wrench"></i>
-                                            <i id="delete" class="fas fa-trash"></i>
+                                        <td>
+                                            <i class="fas fa-wrench"></i>
+                                            <i class="fas fa-trash"></i>
                                         </td>
-                                        <td id="closeButton">
+                                        <td>
                                             <i id="close" class="fas fa-window-close"></i>
                                         </td>
                                     </tr>`
@@ -59,7 +59,7 @@ export class UI {
     //Yeni karakteri Kullanıcı arayüzüne eklemek içinç
     addNewCharTable(data) {
         this.tableLenght = this.row.length
-        this.tbody.innerHTML += `<tr id="row">
+        this.tbody.innerHTML += `<tr id="${data.id}">
                                     <td style="display: none">${data.id}</td>
                                     <td>${this.tableLenght}</td>
                                     <td>${data.name}</td>
@@ -71,11 +71,11 @@ export class UI {
                                     <td>${data.birth_year}</td>
                                     <td>${data.gender}</td>
                                     <td>
-                                    <i id="update" class="fas fa-wrench"></i>
-                                    <i id="delete" class="fas fa-trash"></i>
+                                    <i class="fas fa-wrench"></i>
+                                    <i class="fas fa-trash"></i>
                                     </td>
                                     <td>
-                                    <i id="close" class="fas fa-window-close"></i>
+                                    <i class="fas fa-window-close"></i>
                                     </td>
                                 </tr>`
     }
