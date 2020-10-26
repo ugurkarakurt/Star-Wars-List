@@ -84,24 +84,20 @@ request.get()
         ui.dataPushTable(data);
 
         const updateBTN = document.querySelectorAll(".fa-wrench");
+        const deleteBTN = document.querySelectorAll(".fa-trash");
+
+
         updateBTN.forEach(function (update) {
             update.addEventListener("click", function () {
-                updateRow(update)
+                updateRow(this);
             });
         });
-        const deleteBTN = document.querySelectorAll(".fa-trash");
         deleteBTN.forEach(function (remove) {
             remove.addEventListener("click", function () {
                 deleteRow(remove)
             });
         });
-        const closeBTN = document.querySelectorAll(".fa-window-close");
-        closeBTN.forEach(function (close) {
-            close.addEventListener("click", function () {
-                ui.defaultRow(close.parentElement.parentElement);
-                close.parentElement.parentElement.contentEditable = false;
-            });
-        });
+
         form.addEventListener("submit", addNewChar);
     })
     .catch(err => console.log(err));
@@ -109,74 +105,45 @@ request.get()
 let updateData;
 
 function updateRow(element) {
+    const closeBTN = document.querySelectorAll(".fa-window-close");
 
+    closeBTN.forEach(function (close) {
+        close.addEventListener("click", function () {
+            ui.defaultRow(close.parentElement.parentElement, close);
+        });
+    });
+    
     updateData = element.parentElement.parentElement.children;
 
     element.parentElement.parentElement.contentEditable = true;
     element.parentElement.contentEditable = false;
     element.parentElement.nextElementSibling.contentEditable = false;
 
-    ui.updateRow(element.parentElement.parentElement);
+    ui.updateRow(element.parentElement.parentElement, element);
 
-    element.parentElement.parentElement.onfocusout = function () {
-        Swal.fire({
-            title: 'Do you want to save your change?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, save it!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire(
-                    'Saved!',
-                    'Your file has been saved.',
-                    'success',
-                    request.put(element.parentElement.parentElement.id, {
-                        "name": updateData[2].innerText,
-                        "height": updateData[3].innerText,
-                        "mass": updateData[4].innerText,
-                        "hair_color": updateData[5].innerText,
-                        "skin_color": updateData[6].innerText,
-                        "eye_color": updateData[7].innerText,
-                        "birth_year": updateData[8].innerText,
-                        "gender": updateData[9].innerText
-                    }),
-                    ui.defaultRow(element.parentElement.parentElement)
-                )
-            }
+    element.addEventListener("click", function () {
+        request.put(element.parentElement.parentElement.id, {
+            "name": updateData[2].innerText,
+            "height": updateData[3].innerText,
+            "mass": updateData[4].innerText,
+            "hair_color": updateData[5].innerText,
+            "skin_color": updateData[6].innerText,
+            "eye_color": updateData[7].innerText,
+            "birth_year": updateData[8].innerText,
+            "gender": updateData[9].innerText
         })
-
-    };
+        ui.defaultRow(element.parentElement.parentElement, element)
+        element.parentElement.parentElement.contentEditable = false
+    })
 };
 
 function deleteRow(element) {
 
-    console.log(element.parentElement.parentElement.id);
-
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success',
-                request.delete(element.parentElement.parentElement.id)
-                .then(message => {
-                    ui.deleteCharUI(element.parentElement.parentElement)
-                })
-                .catch(err => console.error(err))
-            )
-        }
-    })
+    request.delete(element.parentElement.parentElement.id)
+        .then(message => {
+            ui.deleteCharUI(element.parentElement.parentElement)
+        })
+        .catch(err => console.error(err))
 };
 
 let genderVal;

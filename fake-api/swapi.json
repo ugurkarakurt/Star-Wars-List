@@ -1,26 +1,92 @@
 {
   "results": [
     {
+      "name": "Owen Lars",
+      "height": "178",
+      "mass": "120",
+      "hair_color": "brown, grey",
+      "skin_color": "light",
+      "eye_color": "blue",
+      "birth_year": "52BBY",
+      "gender": "ma213le123",
+      "id": 6
+    },
+    {
+      "name": "Beru Whitesun lars",
+      "height": "165",
+      "mass": "75",
+      "hair_color": "brown",
+      "skin_color": "light",
+      "eye_color": "blue",
+      "birth_year": "47BBY",
+      "gender": "female",
+      "id": 7
+    },
+    {
+      "name": "R5-D4",
+      "height": "97",
+      "mass": "32",
+      "hair_color": "n/a",
+      "skin_color": "white, red",
+      "eye_color": "red",
+      "birth_year": "unknown",
+      "gender": "n/a",
+      "id": 8
+    },
+    {
+      "name": "Biggs Darklighter",
+      "height": "183",
+      "mass": "84",
+      "hair_color": "black",
+      "skin_color": "light",
+      "eye_color": "brown",
+      "birth_year": "24BBY",
+      "gender": "male",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "Obi-Wan Kenobi",
+      "height": "182",
+      "mass": "77",
+      "hair_color": "auburn",
+      "skin_color": "fair",
+      "eye_color": "blue-gray",
+      "birth_year": "57BBY",
+      "gender": "male"
+    },
+    {
+      "id": 11,
+      "name": "Anakin Skywalker",
+      "height": "188",
+      "mass": "84",
+      "hair_color": "blond",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "41.9BBY",
+      "gender": "male"
+    },
+    {
+      "id": 12,
       "name": "Wilhuff Tarkin",
       "height": "180",
       "mass": "unknown",
       "hair_color": "auburn",
       "skin_color": "fair",
       "eye_color": "blue",
-      "birth_year": "64qwewqeBBY",
-      "gender": "male+",
-      "id": 12
+      "birth_year": "64BBY",
+      "gender": "male"
     },
     {
+      "id": 13,
       "name": "Chewbacca",
       "height": "228",
       "mass": "112",
       "hair_color": "brown",
       "skin_color": "unknown",
       "eye_color": "blue",
-      "birth_year": "200BasdBasdY",
-      "gender": "male",
-      "id": 13
+      "birth_year": "200BBY",
+      "gender": "male"
     },
     {
       "id": 14,
@@ -45,15 +111,15 @@
       "gender": "male"
     },
     {
+      "id": 16,
       "name": "Jabba Desilijic Tiure",
       "height": "175",
       "mass": "1,358",
       "hair_color": "n/a",
       "skin_color": "green-tan",
       "eye_color": "orange",
-      "birth_year": "600BBYqwe",
-      "gender": "hermaphrodite",
-      "id": 16
+      "birth_year": "600BBY",
+      "gender": "hermaphrodite"
     },
     {
       "id": 17,
@@ -595,15 +661,15 @@
       "gender": "male"
     },
     {
+      "id": 66,
       "name": "Bail Prestor Organa",
       "height": "191",
-      "mass": "unknownsjfjsf",
+      "mass": "unknown",
       "hair_color": "black",
       "skin_color": "tan",
       "eye_color": "brown",
       "birth_year": "67BBY",
-      "gender": "male",
-      "id": 66
+      "gender": "male"
     },
     {
       "id": 67,
@@ -780,373 +846,6 @@
       "eye_color": "hazel",
       "birth_year": "21BBY",
       "gender": "male"
-    },
-    {
-      "name": "Luke Skywalker",
-      "height": "170",
-      "mass": "170",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "18dy18",
-      "gender": "male",
-      "id": 83
-    },
-    {
-      "name": "name.value.trim()",
-      "height": "height.value",
-      "mass": "mass.value",
-      "hair_color": "hair.value,",
-      "skin_color": "skin.value",
-      "eye_color": "eye.value",
-      "birth_year": "birthDay.value.trim()",
-      "gender": "genderVal",
-      "id": 84
-    },
-    {
-      "name": "name.value.trim()",
-      "height": "height.value",
-      "mass": "mass.value",
-      "hair_color": "hair.value,",
-      "skin_color": "skin.value",
-      "eye_color": "eye.value",
-      "birth_year": "birthDay.value.trim()",
-      "gender": "genderVal",
-      "id": 85
-    },
-    {
-      "name": "name",
-      "height": "height",
-      "mass": "mass",
-      "hair_color": "hair",
-      "skin_color": "skin",
-      "eye_color": "eye",
-      "birth_year": "birthDay",
-      "gender": "genderVal",
-      "id": 86
-    },
-    {
-      "name": "name",
-      "height": "height",
-      "mass": "mass",
-      "hair_color": "hair",
-      "skin_color": "skin",
-      "eye_color": "eye",
-      "birth_year": "birthDay",
-      "gender": "genderV",
-      "id": 87
-    },
-    {
-      "name": "name",
-      "height": "height",
-      "mass": "mass",
-      "hair_color": "hair",
-      "skin_color": "skin",
-      "eye_color": "eye",
-      "birth_year": "birthDay",
-      "gender": "genderV",
-      "id": 88
-    },
-    {
-      "name": "UĞUR",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "123",
-      "id": 89
-    },
-    {
-      "name": "sa",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "sa",
-      "id": 90
-    },
-    {
-      "name": "ere",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "ggr",
-      "id": 91
-    },
-    {
-      "name": "123",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "13",
-      "id": 92
-    },
-    {
-      "name": "f",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "d",
-      "id": 93
-    },
-    {
-      "name": "3",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "3",
-      "id": 94
-    },
-    {
-      "name": "UĞUR",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "123",
-      "id": 95
-    },
-    {
-      "name": "h",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "h",
-      "gender": "male",
-      "id": 96
-    },
-    {
-      "name": "jj",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "3",
-      "gender": "male",
-      "id": 97
-    },
-    {
-      "name": "egrw",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "ergegr",
-      "gender": "female",
-      "id": 98
-    },
-    {
-      "name": "Burakcan U.",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "TAVASPI",
-      "gender": "female",
-      "id": 99
-    },
-    {
-      "name": "Berkcab",
-      "height": "269",
-      "mass": "209",
-      "hair_color": "Black",
-      "skin_color": "Golden-Blonde",
-      "eye_color": "Green",
-      "birth_year": "Turan",
-      "gender": "female",
-      "id": 100
-    },
-    {
-      "name": "UĞUR",
-      "height": "269",
-      "mass": "209",
-      "hair_color": "Blue-Green",
-      "skin_color": "Beige",
-      "eye_color": "Hazel",
-      "birth_year": "123",
-      "gender": "male",
-      "id": 101
-    },
-    {
-      "name": "UĞUR",
-      "height": "271",
-      "mass": "143",
-      "hair_color": "Black",
-      "skin_color": "Brown",
-      "eye_color": "Green",
-      "birth_year": "123",
-      "gender": "other",
-      "id": 102
-    },
-    {
-      "name": "123213",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "12313",
-      "gender": "male",
-      "id": 103
-    },
-    {
-      "name": "fds",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "Black",
-      "skin_color": "Auburn",
-      "eye_color": "Green",
-      "birth_year": "sdf",
-      "gender": "male",
-      "id": 104
-    },
-    {
-      "name": "wef",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "wef",
-      "gender": "male",
-      "id": 105
-    },
-    {
-      "name": "as",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 106
-    },
-    {
-      "name": "123213",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "18dy18",
-      "gender": "male",
-      "id": 107
-    },
-    {
-      "name": "123213",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Auburn",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 108
-    },
-    {
-      "name": "123",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "13",
-      "gender": "male",
-      "id": 109
-    },
-    {
-      "name": "123",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "123",
-      "gender": "male",
-      "id": 110
-    },
-    {
-      "name": "123",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "123",
-      "gender": "male",
-      "id": 111
-    },
-    {
-      "name": "asd",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 112
-    },
-    {
-      "name": "sad",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 113
-    },
-    {
-      "name": "asd",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 114
-    },
-    {
-      "name": "123",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "123",
-      "gender": "male",
-      "id": 115
-    },
-    {
-      "name": "asd",
-      "height": "0",
-      "mass": "0",
-      "hair_color": "White",
-      "skin_color": "Black",
-      "eye_color": "Light-Blue",
-      "birth_year": "asd",
-      "gender": "male",
-      "id": 116
     }
   ]
 }

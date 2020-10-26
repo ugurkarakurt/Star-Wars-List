@@ -107,15 +107,25 @@ export class UI {
         element.remove()
     }
 
-    updateRow(element) {
+    updateRow(element, btn) {
         element.style.transform = "scale(1.2)"
         element.style.boxShadow = "0px 0px 15px 0px rgba(0,0,0,0.75)"
-
+        if (btn.className === "fas fa-wrench") {
+            btn.className = "fas fa-check";
+        }
     }
 
-    defaultRow(element) {
-        element.style.transform = "scale(1)"
-        element.style.boxShadow = "none"
+    defaultRow(element, btn) {
+        if (btn.className === "fas fa-window-close") {
+            btn.parentElement.parentElement.contentEditable = false;
+            element.style.transform = "scale(1)"
+            element.style.boxShadow = "none"
+            btn.parentElement.previousElementSibling.children[0].className = "fas fa-wrench"
+        } else if (btn.className === "fas fa-check") {
+            element.style.transform = "scale(1)"
+            element.style.boxShadow = "none"
+            btn.className = "fas fa-wrench"
+        }
     }
 
     showMainContainer() {

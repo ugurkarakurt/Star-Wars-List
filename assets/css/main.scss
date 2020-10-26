@@ -118,8 +118,8 @@ main {
                 margin-top: 1rem;
 
                 .input-group-prepend {
-                    flex: .8 1;
-                    margin-right: .3rem;
+                    flex: 0.8 1;
+                    margin-right: 0.3rem;
 
                     span {
                         font-size: 1rem;
@@ -137,7 +137,7 @@ main {
                 label {
                     @extend %center;
                     margin: 0;
-                    margin-right: .8rem;
+                    margin-right: 0.8rem;
                 }
 
                 .input-group-append {
@@ -146,21 +146,20 @@ main {
 
                     input {
                         width: 100%;
-                        padding-right: .2rem;
-                        padding-left: .4rem;
-
+                        padding-right: 0.2rem;
+                        padding-left: 0.4rem;
                     }
                 }
 
                 &:last-child {
                     .check-wrapper {
                         @extend %center;
-                        padding: .375rem;
+                        padding: 0.375rem;
                         border: 1px solid #474744;
-                        border-radius: .4rem;
+                        border-radius: 0.4rem;
 
                         input {
-                            margin-right: .4rem;
+                            margin-right: 0.4rem;
                         }
                     }
                 }
@@ -195,9 +194,6 @@ main {
                     top: 1px;
                 }
             }
-
-
-
         }
     }
 
@@ -226,7 +222,6 @@ main {
                         &:nth-child(1),
                         &:nth-child(10) {
                             width: 5%;
-
                         }
 
                         &:nth-child(2) {
@@ -236,7 +231,6 @@ main {
 
                         &:nth-child(11) {
                             width: 5%;
-
                         }
                     }
                 }
@@ -258,7 +252,6 @@ main {
                         &:nth-child(11),
                         &:nth-child(12) {
                             width: 5%;
-
                         }
 
                         &:nth-child(3) {
@@ -273,7 +266,7 @@ main {
                                 cursor: pointer;
 
                                 &:first-child {
-                                    margin-right: .4rem;
+                                    margin-right: 0.4rem;
                                     font-size: 1rem;
 
                                     &:hover {
@@ -281,7 +274,6 @@ main {
                                         transform: scale(1.1);
                                     }
                                 }
-
                                 &:last-child {
                                     font-size: 1rem;
 
@@ -291,12 +283,11 @@ main {
                                     }
                                 }
                             }
-
                         }
 
                         &:nth-child(12) {
                             text-align: center;
-                            padding-left: .5rem;
+                            padding-left: 0.5rem;
 
                             i {
                                 cursor: pointer;
@@ -307,7 +298,6 @@ main {
                                     transform: scale(1.1);
                                 }
                             }
-
                         }
                     }
                 }
