@@ -30,7 +30,9 @@ json-server --watch fake-api/swapi.json
 ```
 npm run start
 ```
-![Star Wars](https://www.pngkit.com/png/full/432-4327979_disfruta-de-los-20-renders-de-la-pelicula.png)
+<br>
+
+![Star Wars](./assets/img/screenshot.png)
 
 
 # What is the Star wars List
